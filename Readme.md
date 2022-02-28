@@ -4,7 +4,7 @@
 
 ## Overview 
 
-Over the next week (week 11) you will be tasked with completing a series of coding challenges. These challenges will help you strengthen you problem-solving skills, reinforce your exposure to Python syntax, and give you opportunity to practice your technical interviewing/whiteboarding skills without a time limit. 
+Over the next week you will undertake a series of in-class exercises and coding challenges. These challenges will help you strengthen you problem-solving skills, reinforce your exposure to Python syntax, and give you opportunity to practice your technical interviewing/whiteboarding skills without a time limit. 
 
 ## Requirements:
 
@@ -12,15 +12,15 @@ Over the next week (week 11) you will be tasked with completing a series of codi
 
 - Complete 1/2 of the coding challenges for each day, though you should try pseudo-coding all of them. 
 
-- Create a daily pull - include a summary of which problems you completed and any notes about incomplete challenges. 
+- Create a daily deliverable submission - include a summary of which problems you completed and any notes about incomplete challenges as a comment on your PR.
 
-- This daily activity will count as __one deliverable__.
+- This daily activity will be due by __March 7__ and will count as __one deliverable__.
 
 ## Instructions
 
 - Fork and clone this repository
 
-- Solve the challenges by writing your functions in each day's solutions file.   
+- Solve the challenges by writing your functions in each day's solutions file. You are encouraged to keep a scratch file for notes/false starts during the process. 
 
 - Each day's challenges increase in difficulty (0-3)
 
