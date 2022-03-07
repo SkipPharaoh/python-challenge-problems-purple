@@ -29,31 +29,11 @@ print(value_replace(['johnny', 'paula', 'tommy'], {'paula': 'operations', 'johnn
 
 # Problem 1
 
-"""
------------------------------------------------------------------
-
-Prompt:
-
-- Write a function called add_checker that accepts two arguments.
-- The first argument is an list containing at least two integers.  The integers in the list are sorted in ascending order.
-- The second argument is an integer.
-- The add_checker function should return true if there are two integers in the list of integers (first argument) that when added together, equals the integer passed in as the second argument.
-- If there are no two integers in the list that sum up to equal the second argument, add_checker should return false.
-Hint:
-- An efficient solution can leverage the the fact that the integers in the list are sorted.
-
-Examples:
-add_checker( [1, 2], 3 ) // => true
-add_checker( [-3, 2], 9 ) // => false
-add_checker( [10, 15, 16, 22], 32 ) // => true
-add_checker( [10, 15, 16, 22], 19 ) // => false
------------------------------------------------------------------
-"""
-
 def add_checker(items, sum):
-    for i in range(len(items)-1):
-        if items[i] + items[i+1] == sum:
-            return True
+    for num in items:
+        for el in items:
+            if num + el == sum:
+                return True
     return False
 
 print(add_checker([1, 2], 3))
@@ -107,4 +87,43 @@ print(to_camel_case('A_b_c'))
 
 # Problem 3
 
+"""
+-----------------------------------------------------------------
 
+
+Prompt:
+
+- Write a function called total_task_time that accepts two arguments.
+- The first argument is an list of integers referred to as a "queue".  Each integer in the queue represents a "task", more specifically, the amount of time to complete that task.
+- The second argument is an integer representing the number of CPU "threads" available to process all of the tasks in the queue.
+- The total_task_time function should return an integer representing the total time it is going to take to complete all of the tasks in the queue.
+- You may mutate the "queue" list (first argument) if you wish.
+
+Hint:
+
+- Solve it with paper and pencil first.  Look for patterns and generalize.  Pseudocode!
+
+Examples:
+
+total_task_time( [], 1 ) // => 0
+total_task_time( [4, 2, 5], 1 ) // => 11
+total_task_time( [5, 8], 2 ) // => 8
+total_task_time( [4, 2, 10], 2 ) // => 12
+total_task_time( [2, 2, 3, 3, 4, 4], 2 ) //=> 9
+total_task_time( [5, 2, 6, 8, 7, 2], 3 ) // => 12
+
+-----------------------------------------------------------------
+"""
+
+def total_task_time(queue, threads):
+    total = 0
+    for i in range(len(queue)):
+        total += queue[i]
+    return total
+
+print(total_task_time([], 1))
+print(total_task_time([4, 2, 5], 1))
+print(total_task_time([5, 8], 2))
+print(total_task_time([4, 2, 10], 2))
+print(total_task_time([2, 2, 3, 3, 4, 4], 2))
+print(total_task_time([5, 2, 6, 8, 7, 2], 3))
